@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 500ms linear;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.todos .todo{
+    border: .1rem solid;
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .1rem;
+    background: grey;
+}
+
+.todos .todo .todo-text{
+    color: white;
+}
+
+.todos .todo .todo-buttons .fa-check{
+    color: green;
+    cursor: pointer;
+} 
+
+.todos .todo .todo-buttons .fa-trash{
+    color: red;
+    cursor: pointer;
+} 
+
+.todos .todo.done{
+    background-color: lime;
+}
+
+.todos .todo.done .todo-text{
+    color: black;
+}
+
+.fall{
+    transform: rotate(20deg) translateY(5rem);
+}
+
